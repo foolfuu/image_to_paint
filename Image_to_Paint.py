@@ -7,7 +7,7 @@ from tkinter import messagebox
 lister = listdir()
 list_image = list()
 for i in lister:
-    if "jpg" in i: list_image.append(i)
+    if "jpg" in i or "png" in i: list_image.append(i)
 
 for i in range(len(list_image)): print(f"{i+1}: {list_image[i]}")
 while True:
